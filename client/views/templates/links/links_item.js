@@ -1,8 +1,7 @@
 Template.linksItem.events({
 	'click .external-link': function(e) {
 		e.preventDefault();
-		var link = this.url;
-		var url = link.match(/https.*/)
-		window.open(url);
+		var link = this.url.match(/https.*/);
+		window.open(link, '_self');
 	}
 })
