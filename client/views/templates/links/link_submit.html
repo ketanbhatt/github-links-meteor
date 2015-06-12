@@ -1,0 +1,33 @@
+<template name="linkSubmit">
+	<form class="main">
+	<div class="control-group">
+	<label class="control-label" for="link">Link</label><div class="controls">
+	<input name="link" type="text" value=""
+	placeholder="Project or Issue link"/>
+	</div>
+	</div>
+	<div class="control-group">
+	<label class="control-label"
+	for="title">Title</label>
+	<div class="controls">
+	<input name="title" type="text" value=""
+	placeholder="Your project in short"/>
+	</div>
+	</div>
+	<div class="control-group">
+	<label class="control-label"
+	for="desc">Description</label>
+	<div class="controls">
+	<textarea name="desc" type="text" value="" placeholder="Issue description"></textarea>
+	</div>
+	</div>
+	<div class="control-group">
+	<div class="controls">
+	<input type="submit" value="Submit" class="btn
+	btn-primary"/>
+	<input id="btn-cancel" value="Cancel" class="btn
+	btn-danger"/>
+	</div>
+	</div>
+	</form>
+</template>
