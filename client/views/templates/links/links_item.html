@@ -1,9 +1,7 @@
 <template name="linksItem">
-	<hr>
-	<li class="external-link">
-		<a href="{{url}}">
-			<h4>{{title}}</h4>
-		</a>
-		<p>{{desc}}</p>
-	</li>
+	<a href="{{url}}" class="list-group-item external-link">		
+		<span class="badge">14 Clicks</span>
+		<h4 class="list-group-item-heading">{{title}}</h4>
+		<p class="list-group-item-text">{{desc}}</p>
+	</a>
 </template>
