@@ -3,6 +3,7 @@
 		{{#if currentUser }}
 			<div class="btn-group">
 			  <button type="button" class="btn btn-success navbar-btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+			  <img src="{{currentUser.profile.picture}}" alt="" height="20" width="20">
 			    {{currentUser.profile.name}} <span class="caret"></span>
 			  </button>
 			  <ul class="dropdown-menu" role="menu">
