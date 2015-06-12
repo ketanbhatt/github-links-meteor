@@ -3,7 +3,7 @@ Template.linkSubmit.events({
 		e.preventDefault();
 
 		var link = {
-			link: $(e.target).find('[name=link]').val(),
+			url: $(e.target).find('[name=url]').val(),
 			title: $(e.target).find('[name=title]').val(),
 			desc: $(e.target).find('[name=desc]').val()
 		}
@@ -13,6 +13,7 @@ Template.linkSubmit.events({
 	},
 
 	'click #btn-cancel': function(e) {
+		e.preventDefault();
 		Router.go('linksList');
 	}
 })

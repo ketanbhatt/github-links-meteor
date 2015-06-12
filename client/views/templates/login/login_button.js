@@ -1,6 +1,8 @@
 Template.loginButton.events({
 	'click #github-login': function(e){
-		Meteor.loginWithGithub({}, function(err) {
+		Meteor.loginWithGithub({
+			requestPermissions: ['user']
+		}, function(err) {
 			if (err) {
 				throw new Meteor.Error("Failed to Log in!");
 			}
